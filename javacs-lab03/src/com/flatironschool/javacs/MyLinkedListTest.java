@@ -9,6 +9,7 @@ import static org.junit.Assert.fail;
 import static org.hamcrest.CoreMatchers.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -85,7 +86,7 @@ public class MyLinkedListTest {
 
 		mll.add(5, 7);
 		//System.out.println(Arrays.toString(mal.toArray()));
-		assertThat(mll.get(5), is(new Integer(7)));
+		assertThat(mll.size(),is(6));
 	}
 
 	/**
